@@ -1,51 +1,23 @@
-import { useState } from "react";
-
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  return (
-    <header className="flex items-center justify-between px-6 py-3 md:py-4 shadow max-w-5xl rounded-full mx-auto w-full bg-white">
-      <a href="https://prebuiltui.com">
-        <img
-          src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/dummyLogo/prebuiltuiDummyLogo.svg"
-          alt="Logo"
-        />
+return (
+  <div className="flex justify-center">
+    <header className="fixed top-5 lg:top-8 md:top-7 sm:top-6 mx-3 sm:left-auto sm:right-auto left-0 right-0
+                       flex items-center justify-between
+                       px-4 py-3 sm:py-4 md:py-5 lg:py-6
+                       shadow rounded-full
+                       bg-white w-auto sm:w-2/3">
+      <a href="/" className="shrink-0">
+        <p className="text-red-700 [@media(min-width:350px)]:whitespace-nowrap [@media(min-width:310px)]:w-10 font-bold text-sm lg:text-lg md:pl-10">
+          Alex Gacanga
+        </p>
       </a>
-
-      <nav
-        className={`
-          max-md:absolute max-md:top-0 max-md:left-0
-          max-md:overflow-hidden max-md:h-full
-          transition-[width] bg-white/50 backdrop-blur
-          flex flex-col md:flex-row gap-8 text-gray-900 text-sm
-          ${menuOpen ? "max-md:w-full" : "max-md:w-0"}
-        `}
-      >
-        <a className="hover:text-indigo-600" href="#">Products</a>
-        <a className="hover:text-indigo-600" href="#">Customer Stories</a>
-        <a className="hover:text-indigo-600" href="#">Pricing</a>
-        <a className="hover:text-indigo-600" href="#">Docs</a>
-
-        <button
-          className="md:hidden text-gray-600"
-          onClick={() => setMenuOpen(false)}
-        >
-          ✕
-        </button>
+      <nav className="flex [@media(min-width:365px)_and_(max-width:640px)]:gap-4 [@media(min-width:310px)_and_(max-width:365px)]:gap-2 pl-2 text-xs text-gray-900 font-bold sm:gap-8 sm:justify-around md:pr-10 lg:text-sm">
+        <a className="hover:text-red-700" href="#">Home</a>
+        <a className="hover:text-red-700" href="#">About</a>
+        <a className="hover:text-red-700" href="#">Projects</a>
+        <a className="hover:text-red-700" href="#">Contacts</a>
       </nav>
-
-      <div className="flex items-center space-x-4">
-        <a className="hidden md:flex bg-indigo-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-indigo-700 transition" href="#">
-          Sign up
-        </a>
-
-        <button
-          className="md:hidden text-gray-600"
-          onClick={() => setMenuOpen(true)}
-        >
-          ☰
-        </button>
-      </div>
     </header>
-  );
+  </div>
+);
 }
