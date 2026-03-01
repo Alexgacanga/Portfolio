@@ -4,3 +4,7 @@
 @theme {
     --font-display: "Fontdiner Swanky", serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
