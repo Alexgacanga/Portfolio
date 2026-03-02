@@ -76,7 +76,7 @@ export default function Home() {
           </p>
           {/* Headline */}
           <h1
-            className="text-6xl font-bold text-white leading-tight mb-6"
+            className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6"
             style={{
               fontFamily: "'Georgia', 'Times New Roman', serif",
               fontWeight: 700,
@@ -125,7 +125,7 @@ export default function Home() {
               className="px-8 py-3 rounded-full font-semibold text-sm tracking-wide flex items-center gap-2 bg-white/10 border border-white/30 text-white shadow-sm hover:shadow-md hover:bg-white/20 transition-all duration-300 hover:scale-105 active:scale-95 backdrop-blur-sm"
               style={{ cursor: "pointer" }}
             >
-              Projects
+              My Projects
             </button>
           </div>
         </div>

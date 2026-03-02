@@ -1,11 +1,13 @@
-import { Body } from "./components/Body";
+import { About } from "./components/About";
+import { Contacts } from "./components/Contacts";
 import Home from "./components/Home";
 
 export default function App() {
   return (
     <div>
       <Home />
-      <Body />
+      <About />
+      <Contacts />
     </div>
   )
 }
