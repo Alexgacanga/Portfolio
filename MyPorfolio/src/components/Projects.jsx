@@ -87,7 +87,7 @@ export const Projects = () => {
                     ordered feed from followed accounts. The project emphasizes
                     RESTful API design, secure authentication, efficient
                     database relationships, and scalable handling of social
-                    interactions in a real-world–like environment. This is the
+                    interactions in a real-world like environment. This is the
                     link for the project on GitHub:{" "}
                     <a href="https://github.com/Alexgacanga/SocialMedia_API.git">
                       <span className="text-blue-400 whitespace-normal">

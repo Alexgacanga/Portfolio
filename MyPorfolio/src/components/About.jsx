@@ -50,8 +50,8 @@ export const About = () => {
         </div>
         <div className="pb-15 sm:pt-10">
           <a
-            href="Portfolio/MyPorfolio/src/assets/Gacanga Alex Mwangi CV.pdf"
-            download
+            href="/CV.pdf"
+            download="Alex Gacanga CV.pdf"
           >
             <button className="bg-indigo-700 text-white font-bold md:w-44 md:h-12 w-32 h-9 md:text-[15px] text-[11px] rounded-2xl shadow-2xl hover:bg-indigo-600 cursor-pointer flex items-center justify-center gap-2 transition-all">
               Download Cv

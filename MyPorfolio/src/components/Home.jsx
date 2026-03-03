@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Header />
       <div
-        className="pt-30 pb-15 min-h-screen flex items-center  justify-center relative overflow-hidden"
+        className="md:pt-50 pt-30 pb-15 min-h-screen flex items-center  justify-center relative overflow-hidden"
         style={{
           background: "linear-gradient(to left, #14b8a6 0%, #991b1b 100%)",
         }}
@@ -105,22 +105,26 @@ export default function Home() {
               transition: "opacity 0.6s ease 0.65s, transform 0.6s ease 0.65s",
             }}
           >
-            <button
-              className="px-8 py-3 rounded-full text-white font-semibold text-sm tracking-wide flex items-center gap-2 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
-              style={{
-                background: "linear-gradient(135deg, #e040a0 0%, #f06030 100%)",
-                border: "none",
-                cursor: "pointer",
-              }}
-            >
-              contact me
-            </button>
-            <button
-              className="px-8 py-3 rounded-full font-semibold text-sm tracking-wide flex items-center gap-2 bg-white/10 border border-white/30 text-white shadow-sm hover:shadow-md hover:bg-white/20 transition-all duration-300 hover:scale-105 active:scale-95 backdrop-blur-sm"
-              style={{ cursor: "pointer" }}
-            >
-              My Projects
-            </button>
+            <a href="#contacts">
+              <button
+                className="px-8 py-3 rounded-full text-white font-semibold text-sm tracking-wide flex items-center gap-2 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
+                style={{
+                  background: "linear-gradient(135deg, #e040a0 0%, #f06030 100%)",
+                  border: "none",
+                  cursor: "pointer",
+                }}
+              >
+                contact me
+              </button>
+            </a>
+            <a href="#projects">
+              <button
+                className="px-8 py-3 rounded-full font-semibold text-sm tracking-wide flex items-center gap-2 bg-white/10 border border-white/30 text-white shadow-sm hover:shadow-md hover:bg-white/20 transition-all duration-300 hover:scale-105 active:scale-95 backdrop-blur-sm"
+                style={{ cursor: "pointer" }}
+              >
+                My Projects
+              </button>
+            </a>
           </div>
         </div>
       </div>

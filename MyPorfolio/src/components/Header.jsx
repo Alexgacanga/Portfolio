@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <div className="flex justify-center">
       <header
-        className="z-50 fixed top-5 lg:top-13 md:top-10 sm:top-7 mx-3 sm:left-auto sm:right-auto left-0 right-0
+        className="z-50 fixed top-5 md:top-10 sm:top-7 mx-3 sm:left-auto sm:right-auto left-0 right-0
                        flex items-center justify-between
                        px-4 py-1 sm:py-2 lg:py-3
                        shadow-xl rounded-full
