@@ -18,8 +18,6 @@ export default function Home() {
           background: "linear-gradient(to left, #14b8a6 0%, #991b1b 100%)",
         }}
       >
-        
-        {/* Soft background blobs */}
         <div
           className="absolute top-0 left-0 w-96 h-96 rounded-full opacity-30 pointer-events-none"
           style={{
@@ -42,7 +40,6 @@ export default function Home() {
             transition: "opacity 0.7s ease, transform 0.7s ease",
           }}
         >
-          {/* Avatar */}
           <div className="flex justify-center mb-5">
             <div
               className="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-xl"
@@ -52,18 +49,16 @@ export default function Home() {
                 transition: "opacity 0.6s ease 0.1s, transform 0.6s ease 0.1s",
               }}
             >
-              {/* Placeholder avatar - replace src with actual image */}
               <div
-                className="w-full h-full flex items-center justify-center text-4xl"
+                className="flex w-full h-full items-center justify-center"
                 style={{
                   background: "linear-gradient(135deg, #d4a5c9, #a5b8d4)",
                 }}
               >
-                👩‍💻
+                <img src="src/assets/pp.jpeg" className="h-25 w-30 rounded-full object-cover" alt="profile"/>
               </div>
             </div>
           </div>
-          {/* Greeting */}
           <p
             className="text-white/80 text-lg mb-3 tracking-wide"
             style={{
@@ -74,7 +69,6 @@ export default function Home() {
           >
             Hi! I'm Gacanga Alex Mwangi
           </p>
-          {/* Headline */}
           <h1
             className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6"
             style={{
@@ -90,7 +84,6 @@ export default function Home() {
             <br />
             based in Nairobi, Kenya.
           </h1>
-          {/* Bio */}
           <p
             className="text-white/70 text-base leading-relaxed mb-10 max-w-lg mx-auto"
             style={{
@@ -98,9 +91,11 @@ export default function Home() {
               transition: "opacity 0.6s ease 0.5s",
             }}
           >
-            Software Engineer dedicated to shipping scalable digital solutions and secure integrations. Committed to technical excellence, from architecting clean systems to delivering seamless, high-impact user experiences.
+            Software Engineer dedicated to shipping scalable digital solutions
+            and secure integrations. Committed to technical excellence, from
+            architecting clean systems to delivering seamless, high-impact user
+            experiences.
           </p>
-          {/* Buttons */}
           <div
             className="flex items-center justify-center gap-4"
             style={{
@@ -109,7 +104,6 @@ export default function Home() {
               transition: "opacity 0.6s ease 0.65s, transform 0.6s ease 0.65s",
             }}
           >
-            {/* Contact Me Button */}
             <button
               className="px-8 py-3 rounded-full text-white font-semibold text-sm tracking-wide flex items-center gap-2 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
               style={{
@@ -120,7 +114,6 @@ export default function Home() {
             >
               contact me
             </button>
-            {/* Resume Button */}
             <button
               className="px-8 py-3 rounded-full font-semibold text-sm tracking-wide flex items-center gap-2 bg-white/10 border border-white/30 text-white shadow-sm hover:shadow-md hover:bg-white/20 transition-all duration-300 hover:scale-105 active:scale-95 backdrop-blur-sm"
               style={{ cursor: "pointer" }}
