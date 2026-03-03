@@ -1,4 +1,5 @@
 import { Download } from "lucide-react";
+import ab from "../assets/ab.png"
 
 export const About = () => {
   return (
@@ -44,7 +45,7 @@ export const About = () => {
             </p>
           </div>
           <div className="m-auto px-10 md:pr-10 lg:pr-25 md:w-1/2">
-            <img src="/src/assets/ab.png" alt="" />
+            <img src={ab} alt="" />
           </div>
         </div>
         <div className="pb-15 sm:pt-10">

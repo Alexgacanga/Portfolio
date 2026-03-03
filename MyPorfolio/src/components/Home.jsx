@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Header from "./Header";
+import pp from "../assets/pp.jpeg"
 
 export default function Home() {
   const [visible, setVisible] = useState(false);
@@ -55,7 +56,7 @@ export default function Home() {
                   background: "linear-gradient(135deg, #d4a5c9, #a5b8d4)",
                 }}
               >
-                <img src="src/assets/pp.jpeg" className="h-25 w-30 rounded-full object-cover" alt="profile"/>
+                <img src={pp} className="h-25 w-30 rounded-full object-cover" alt="profile"/>
               </div>
             </div>
           </div>
